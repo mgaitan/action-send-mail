@@ -83,6 +83,7 @@ async function main() {
                 password = unescape(url.password)
             }
         }
+        console.log(`Connecting to server: ${serverAddress},  username: ${username}, port: ${serverPort}, secure: ${secure}`);
 
         const subject = core.getInput("subject", { required: true })
         const from = core.getInput("from", { required: true })
